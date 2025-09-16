@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form action="" name="register">
+        <fieldset>
+           <legend>필수항목</legend>
+            <ul>
+                <li> 
+                    <label for="name"> 이름 : <input type="text" name="name" id="name" size="5" required autofocus></label>
+                </li>
+                <li>
+                    <label for="email"> 이메일 : <input type="email" name="email" id="email"></label>
+                </li>
+                <li>
+                    <label for="password1"> 비밀번호 : <input type="password" name="password1" id="password1"></label>
+                </li>
+                <li>
+                    <label for="password2"> 비밀번호 확인 : <input type="password" name="password12" id="password2"></label>
+                </li>
+                <li>
+                    <label for="tel"> 전화번호 : <input type="tel" name="tel" id="tel" placeholder="010-1234-1234"></label>
+                </li>
+                <li>
+                    <label for="brithday"> 생년월일 : <input type="date" name="brithday" id="brithday"></label>
+                </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend>선택사항</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="mailling" id="mailling_yes" value="mailling_yes">
+                    <label for="mailling_yes">메일수신</label>
+                    <input type="radio" name="mailling" id="mailling_no" value="mailling_no">
+                    <label for="mailling_no">거부</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="favorite" id="fa_sports" value="sports">
+                    <label for="fa_sports">스포츠</label>
+                    <input type="checkbox" name="fa_it" id="fa_it" value="fa_it">
+                    <label for="fa_it">디지털기기</label>
+                     <input type="checkbox" name="fa_movie" id="fa_movie" value="movie">
+                    <label for="fa_movie">영화</label>
+                </li>
+                <li>
+                    <label for="gender">성별</label>
+                    <select name="gender" id="gender">
+                        <option value="male">남자</option>
+                        <option value="female">여자</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <label for="meno">메모</label><br>
+        <textarea name="memo" id="memo" cols="40" rows="8"></textarea><br>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+</html>
